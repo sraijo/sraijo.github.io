@@ -11,7 +11,7 @@ async function uwdetect()
 			return;
         for(i in map_index)
         {
-            if((map_index[i].o.length>0)&&(/(Shiny Rock)|(Treasure Chest)|(Glowing Altar)|(Stairs Up)|(Stairway)|(Altar)|(Deep Recall)|(Hole)|(Odd Chest)|(Statue of Mercy)/.test(map_index[i].o[0].name)))
+            if((map_index[i].o.length>0)&&(/(Shiny Rock)|(Treasure Chest)|(Glowing Altar)|(Hole)|(Stairs Up)|(Stairway)|(Altar)|(Deep Recall)/.test(map_index[i].o[0].name)))
             {
                 if(!found.find((m)=>{
                     return (map_index[i].o[0].x==m.x)&&(map_index[i].o[0].y==m.y);
@@ -38,6 +38,3 @@ uwdetect();
 // Stairway
 // Deep Recall
 // Odd Chest
-// Hole
-// Shifting Hole
-// Statue of Mercy
